@@ -86,7 +86,7 @@ AUDIO_FEATURE_ENABLED_WMA_OFFLOAD  := true
 AUDIO_USE_LL_AS_PRIMARY_OUTPUT := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
-USE_CUSTOM_AUDIO_POLICY := 1
+#USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Bootloader
@@ -118,8 +118,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 # CNE / DPM
 BOARD_USES_QCNE := true
 
-# Crypto
-TARGET_HW_DISK_ENCRYPTION := true
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -201,7 +199,7 @@ TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom
 USE_SENSOR_MULTI_HAL := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 
 # Wi-Fi

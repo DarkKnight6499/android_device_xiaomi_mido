@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit from the common Open Source product configuration  
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)  
 
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 

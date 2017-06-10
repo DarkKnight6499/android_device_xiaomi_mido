@@ -8,7 +8,7 @@
   {
     "remote": "github",
     "repository":  "thp1997/proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi"
+    "target_path": "vendor/xiaomi",
     "branch": "cm-14.1"
   },
   {

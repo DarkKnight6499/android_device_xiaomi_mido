@@ -119,7 +119,7 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
 BOARD_USES_QCNE := true
 
 # Crypto
-TARGET_HW_DISK_ENCRYPTION := true
+#TARGET_HW_DISK_ENCRYPTION := true
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
@@ -193,6 +193,7 @@ TARGET_USE_SDCLANG := true
 
 # RIL
 TARGET_RIL_VARIANT := caf
+PROTOBUF_SUPPORTED := true  
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/fstab.qcom

@@ -1054,3 +1054,9 @@ on property:vold.decrypt=trigger_restart_min_framework
 
 on property:vold.decrypt=trigger_restart_framework
     restart time_daemon
+
+ 
+on property:sys.boot_completed=1 
+    restart ril-daemon 
+    restart ril-daemon2 
+    restart netmgrd 
